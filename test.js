@@ -6,6 +6,10 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch(apiURL)
       .then(response => response.json())
       .then(data => {
+<<<<<<< HEAD
+=======
+        
+>>>>>>> afaff0b5ecb5bf7d8d02e96402934622eecea896
         data.forEach(todo => {
           const row = document.createElement("tr");
           
@@ -16,6 +20,11 @@ document.addEventListener("DOMContentLoaded", () => {
             <td data-label="Title">${todo.title}</td>
             <td data-label="Status">${todo.completed ? 'Completed' : 'Pending'}</td>
           `;
+<<<<<<< HEAD
+=======
+          
+        
+>>>>>>> afaff0b5ecb5bf7d8d02e96402934622eecea896
           todoTableBody.appendChild(row);
         });
       })
